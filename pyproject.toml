@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "predictive maintenance"
+version = "1.0.0"
+description = "Sistema de Manutenção Preditiva"
+authors = ["Dário Alef <dario.alef@gmail.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+pydantic = "^2.10.0"
+scikit-learn = "^1.5.2"
+joblib = "^1.4.2"
+numpy = "^1.26.4"
+pandas = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start-backend = "uvicorn app.backend.main:app --host 0.0.0.0 --port 5000 --reload"

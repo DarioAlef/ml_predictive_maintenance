@@ -1,0 +1,258 @@
+# ============================================
+# Python & FastAPI
+# ============================================
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.virtualenvs/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+
+# Environments
+.env
+.env.local
+.venv.local
+
+# ============================================
+# Jupyter Notebook
+# ============================================
+
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ============================================
+# Machine Learning Models & Data
+# ============================================
+
+# Modelos treinados (muito grandes para git)
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.pb
+*.pth
+*.onnx
+*.pt
+
+# Dados brutos (geralmente grandes)
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+!**/example.csv
+!**/sample.csv
+
+# Excluir arquivos de dados mas manter estrutura
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ============================================
+# Angular & Node.js
+# ============================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+dist-server/
+tmp/
+out-tsc/
+bazel-out/
+
+# Angular specific
+.angular/
+.angular/cache/
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# ============================================
+# IDEs & Editors
+# ============================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# IntelliJ / PyCharm / WebStorm
+.idea/
+*.iws
+*.iml
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# Documentos Temporários
+# ============================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+*.autosave
+
+# PDFs temporários
+~$*.pdf
+
+# ============================================
+# Arquivos Comprimidos
+# ============================================
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# Logs
+# ============================================
+
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================
+# Arquivos de Configuração Sensíveis
+# ============================================
+
+# Credenciais e segredos
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+*.key
+*.pem
+*.cert
+
+# Configurações locais
+config.local.json
+settings.local.json
+
+# ============================================
+# Específico do Projeto
+# ============================================
+
+# Slides e apresentações em edição
+*.pptx~
+~$*.pptx
+
+# Imagens temporárias
+NCIA_Images/temp/
+
+# Datasets grandes (manter apenas samples)
+datasets/
+!datasets/.gitkeep
+
+# Modelos experimentais
+models/experiments/
+models/temp/
+!models/.gitkeep
+
+# ============================================
+# Manter Estrutura de Pastas Vazias
+# ============================================
+
+# Adicione .gitkeep nos diretórios que devem existir mas estão vazios
+!**/.gitkeep
