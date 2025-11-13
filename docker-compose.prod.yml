@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    image: darioalef/ml-maintenance-backend:v1.0  # ✅ Sua imagem!
+    container_name: ml_backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - ml_network
+    restart: always
+
+  frontend:
+    image: darioalef/ml-maintenance-frontend:v1.4  # ✅ Sua imagem!
+    container_name: ml_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - ml_network
+    restart: always
+
+networks:
+  ml_network:
+    driver: bridge

@@ -1,0 +1,184 @@
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/*.egg-info/
+
+# Poetry
+.venv/
+venv/
+
+# Node
+**/node_modules/
+**/dist/
+**/.angular/
+**/npm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (EXCLUIR DATASETS, MANTER MODELO)
+data/datasets/
+data/notebooks/
+*.csv
+*.ipynb
+!data/models/random_forest_model.jb
+
+# Git
+.git/
+.gitignore# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/*.egg-info/
+
+# Node
+**/node_modules/
+**/dist/
+**/.angular/
+**/npm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (EXCLUIR DATASETS, MANTER MODELO)
+data/datasets/
+data/notebooks/
+*.csv
+*.ipynb
+!data/models/random_forest_model.jb
+
+# Git
+.git/
+.gitignore# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/*.egg-info/
+
+
+# Node
+**/node_modules/
+**/dist/
+**/.angular/
+**/npm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (EXCLUIR DATASETS, MANTER MODELO)
+data/datasets/
+data/notebooks/
+*.csv
+*.ipynb
+!data/models/random_forest_model.jb
+
+# Git
+.git/
+.gitignore# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/*.egg-info/
+
+
+# Node
+**/node_modules/
+**/dist/
+**/.angular/
+**/npm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (EXCLUIR DATASETS, MANTER MODELO)
+data/datasets/
+data/notebooks/
+*.csv
+*.ipynb
+!data/models/random_forest_model.jb
+
+# Git
+.git/
+.gitignore
+
+
+**/__pycache__/
+**/*.pyc
+.venv/
+venv/
+**/node_modules/
+**/dist/
+**/.angular/
+.vscode/
+.idea/
+.DS_Store
+data/datasets/
+data/notebooks/
+*.csv
+*.ipynb
+!data/models/random_forest_model.jb
+.git/**/__pycache__/
+**/*.pyc
+.venv/
+venv/
+**/node_modules/
+**/dist/
+**/.angular/
+.vscode/
+.idea/
+.DS_Store
+data/datasets/
+data/notebooks/
+*.csv
+*.ipynb
+!data/models/random_forest_model.jb
+.git/

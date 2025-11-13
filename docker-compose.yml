@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  # ✅ BACKEND (FastAPI) - CORRIGIDO
+  backend:
+    build:
+      context: .  # ✅ Contexto na RAIZ (onde está poetry.lock)
+      dockerfile: app/backend/Dockerfile  # ✅ Caminho RELATIVO do Dockerfile
+    container_name: ml_backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data/models:/app/data/models:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - ml_network
+    restart: unless-stopped
+
+  # ✅ FRONTEND (Angular + Nginx)
+  frontend:
+    build:
+      context: ./app/frontend
+      dockerfile: Dockerfile
+    container_name: ml_frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    networks:
+      - ml_network
+    restart: unless-stopped
+
+networks:
+  ml_network:
+    driver: bridge
